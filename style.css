@@ -138,8 +138,150 @@ body .hero .right .bottom i {
 }
 body .hero .heropic {
   position: absolute;
-  top: 5%;
+  top: 10%;
   right: 0%;
-  width: 60%;
+  width: 50%;
+}
+
+@media (max-width:600px){
+  body .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 1rem 2rem; */
+  height: 10vh;
+  /* background-color: red; */
+}
+body .nav .left {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+body .nav .left h4 {
+  font-size: 0.8rem;
+  text-wrap: nowrap;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+body .nav .left h4:hover {
+  text-decoration: underline;
+}
+body .nav .left .logo {
+  width:    10%;
+}
+body .nav .right {
+  width: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* gap: 0.1rem; */
+  padding-left: 13rem;
+}
+body .nav .right h4 {
+  font-size: 0.8rem;
+  text-wrap: nowrap;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+body .nav .right h4:hover {
+  text-decoration: underline;
+}
+
+
+body .hero {
+  width: 100%;
+  display: flex;
+  gap: 10rem;
+  margin-top: 2rem;
+  padding: 5rem 2rem;
+}
+body .hero .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: rgb(95, 95, 95);
+}
+body .hero .left h4 {
+  writing-mode:vertical-lr;
+  rotate: 180deg;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+body .hero .left .line {
+  width: 2px;
+  height: 45vh;
+  background-color: rgb(95, 95, 95);
+}
+body .hero .right {
+  display: flex;
+  gap: 9rem;
+  flex-direction: column;
+}
+body .hero .right .top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+body .hero .right .top .ttop {
+  display: flex;
+  gap: 4rem;
   
-}/*# sourceMappingURL=style.css.map */
+}
+body .hero .right .top .ttop p {
+  font-size: 4.5rem;
+  
+}
+body .hero .right .top .tbottom {
+  display: flex;
+  gap: 7rem;
+}
+body .hero .right .top .tbottom p {
+  font-size: 1rem;
+}
+body .hero .right .center {
+  margin-top: 4.5rem;
+  display: flex;
+  flex-direction: column;
+}
+body .hero .right .center h1 {
+  font-size: 8rem;
+  font-weight: 300;
+}
+body .hero .right .center h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+body .hero .right .bottom {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+body .hero .right .bottom h6 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+body .hero .right .bottom i {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+}
+body .hero .heropic {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width:60%;
+}
+
+}
